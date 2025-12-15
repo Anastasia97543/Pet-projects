@@ -78,42 +78,99 @@
       </header>
 
       <section class="main-catalog__section">
-        <form action="main-catalog__filter">
-          <fieldset>
-            <legend>Инфраструктура</legend>
-            <ul>
-              <li>
-                <label><input type="checkbox" checked />Бассейн</label>
+        <form class="catalog-filter" action="#" method="get">
+          <fieldset class="catalog-filter__group">
+            <legend class="catalog-filter__title">Инфраструктура</legend>
+
+            <ul class="catalog-filter__list">
+              <li class="catalog-filter__item">
+                <label class="catalog-filter__label">
+                  <input
+                    class="catalog-filter__control"
+                    type="checkbox"
+                    name="pool"
+                    checked
+                  />
+                  <span class="catalog-filter__text">Бассейн</span>
+                </label>
               </li>
-              <li>
-                <label><input type="checkbox" checked />Парковк</label>
+
+              <li class="catalog-filter__item">
+                <label class="catalog-filter__label">
+                  <input
+                    class="catalog-filter__control"
+                    type="checkbox"
+                    name="parking"
+                    checked
+                  />
+                  <span class="catalog-filter__text">Парковка</span>
+                </label>
               </li>
-              <li>
-                <label><input type="checkbox" checked />Wi-Fi</label>
+
+              <li class="catalog-filter__item">
+                <label class="catalog-filter__label">
+                  <input
+                    class="catalog-filter__control"
+                    type="checkbox"
+                    name="wifi"
+                    checked
+                  />
+                  <span class="catalog-filter__text">Wi-Fi</span>
+                </label>
               </li>
             </ul>
           </fieldset>
-          <fieldset>
-            <legend>Тип жилья</legend>
-            <ul>
-              <li>
-                <label><input type="radio" />Гостиница</label>
+
+          <fieldset class="catalog-filter__group">
+            <legend class="catalog-filter__title">Тип жилья</legend>
+
+            <ul class="catalog-filter__list">
+              <li class="catalog-filter__item">
+                <label class="catalog-filter__label">
+                  <input
+                    class="catalog-filter__control"
+                    type="radio"
+                    name="housing-type"
+                    value="hotel"
+                  />
+                  <span class="catalog-filter__text">Гостиница</span>
+                </label>
               </li>
-              <li>
-                <label><input type="radio" />Мотель</label>
+
+              <li class="catalog-filter__item">
+                <label class="catalog-filter__label">
+                  <input
+                    class="catalog-filter__control"
+                    type="radio"
+                    name="housing-type"
+                    value="motel"
+                  />
+                  <span class="catalog-filter__text">Мотель</span>
+                </label>
               </li>
-              <li>
-                <label><input type="radio" />Апартаменты</label>
+
+              <li class="catalog-filter__item">
+                <label class="catalog-filter__label">
+                  <input
+                    class="catalog-filter__control"
+                    type="radio"
+                    name="housing-type"
+                    value="apartments"
+                  />
+                  <span class="catalog-filter__text">Апартаменты</span>
+                </label>
               </li>
             </ul>
           </fieldset>
-          <fieldset class="filter-price">
-            <legend class="filter-price__legend">Стоимость, ₽</legend>
-            <div class="filter-price__inputs">
-              <label class="filter-price__label" for="price-from">
-                <span class="filter-price__label-text">От</span>
+
+          <fieldset class="catalog-filter__group catalog-filter__group--price">
+            <legend class="catalog-filter__title">Стоимость, ₽</legend>
+
+            <div class="catalog-filter__price-inputs">
+              <label class="catalog-filter__price-label" for="price-from">
+                <span class="catalog-filter__price-text">От</span>
                 <input
-                  class="filter-price__input"
+                  class="catalog-filter__price-input"
                   type="number"
                   id="price-from"
                   name="price-from"
@@ -122,10 +179,10 @@
                 />
               </label>
 
-              <label class="filter-price__label" for="price-to">
-                <span class="filter-price__label-text">До</span>
+              <label class="catalog-filter__price-label" for="price-to">
+                <span class="catalog-filter__price-text">До</span>
                 <input
-                  class="filter-price__input"
+                  class="catalog-filter__price-input"
                   type="number"
                   id="price-to"
                   name="price-to"
@@ -135,9 +192,9 @@
               </label>
             </div>
 
-            <div class="filter-price__range">
+            <div class="catalog-filter__range">
               <input
-                class="filter-price__range-input"
+                class="catalog-filter__range-input"
                 type="range"
                 min="0"
                 max="9000"
@@ -146,16 +203,17 @@
                 aria-label="Максимальная стоимость"
               />
             </div>
-            <div class="filter-price__actions">
+
+            <div class="catalog-filter__actions">
               <button
-                class="filter-price__button filter-price__button--apply"
+                class="catalog-filter__button catalog-filter__button--apply"
                 type="submit"
               >
                 Применить
               </button>
 
               <button
-                class="filter-price__button filter-price__button--reset"
+                class="catalog-filter__button catalog-filter__button--reset"
                 type="reset"
               >
                 Сбросить
