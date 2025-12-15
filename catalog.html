@@ -9,34 +9,50 @@
   <body>
     <header class="page-header">
       <nav class="main-nav">
-        <ul class="navigation-list navigation-site">
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">Главная</a>
+        <ul class="main-nav__list main-nav__list--site">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Главная</a>
           </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">О Седоне</a>
+
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">О Седоне</a>
           </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">Гостиницы</a>
+
+          <li class="main-nav__item">
+            <a
+              class="main-nav__link main-nav__link--active"
+              href="#"
+              aria-current="page"
+            >
+              Гостиницы
+            </a>
           </li>
         </ul>
 
-        <ul class="navigation-list navigation-user">
-          <li class="navigation-item">
-            <a class="navigation-link navigation-link--search" href="#">
+        <ul class="main-nav__list main-nav__list--user">
+          <li class="main-nav__item">
+            <a
+              class="main-nav__link main-nav__link--search"
+              href="#"
+              aria-label="Поиск"
+            >
               <span class="visually-hidden">Поиск</span>
             </a>
           </li>
 
-          <li class="navigation-item">
-            <a class="navigation-link navigation-link--favorite" href="#">
+          <li class="main-nav__item">
+            <a
+              class="main-nav__link main-nav__link--favorite"
+              href="#"
+              aria-label="Избранное"
+            >
               <span class="visually-hidden">Избранное</span>
               <span class="favorite-count">12</span>
             </a>
           </li>
 
-          <li class="navigation-item">
-            <button class="navigation-button" type="button">Хочу сюда!</button>
+          <li class="main-nav__item">
+            <button class="main-nav__button" type="button">Хочу сюда!</button>
           </li>
         </ul>
       </nav>
