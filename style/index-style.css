@@ -18,7 +18,9 @@
   padding: 0;
   margin: 0 auto;
   max-width: 1200px;
-  border: 1px solid #000;
+  outline: 1px solid #000;
+  width: 100%;
+  box-sizing: border-box;
 }
 body {
   font-family: "PT Sans", sans-serif;
@@ -26,6 +28,18 @@ body {
   line-height: 21px;
   color: black;
   background-color: white;
+}
+/* img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+} */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.visually-hidden {
+  display: none;
 }
 .page-header {
   background-color: #ffffff;
@@ -86,6 +100,7 @@ body {
 }
 
 .main-nav__list--user img {
+  display: block;
   width: 24px;
   height: 24px;
 }
