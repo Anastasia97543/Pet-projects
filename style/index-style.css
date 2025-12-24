@@ -26,18 +26,26 @@ body {
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
-  color: black;
-  background-color: white;
+  color: #000000;
+  background-color: #ffffff;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  padding: 0;
 }
 /* img {
   max-width: 100%;
   height: auto;
   display: block;
 } */
-a {
-  text-decoration: none;
-  color: inherit;
-}
 .visually-hidden {
   display: none;
 }
@@ -45,28 +53,23 @@ a {
   background-color: #ffffff;
   border-bottom: 1px solid #e5e5e5;
 }
-
 .main-nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 70px;
-  height: 70px;
   background-color: #fff;
   box-sizing: border-box;
 }
-
 .main-nav__left {
   display: flex;
   align-items: center;
 }
-
-.main-nav__logo img {
+.main-nav__logo-svg {
   display: block;
   width: 138px;
   height: 64px;
 }
-
 /* Левое меню */
 .main-nav__list--site {
   display: flex;
@@ -76,19 +79,16 @@ a {
   gap: 30px;
   margin-left: 30px;
 }
-
 .main-nav__link {
   color: #000;
   text-decoration: none;
-  font-weight: 700;
+  font-weight: bold;
   font-size: 20px;
   line-height: 24px;
 }
-
 .main-nav__link--active {
-  font-weight: 700;
+  font-weight: bold;
 }
-
 /* --- Правая часть меню --- */
 .main-nav__list--user {
   display: flex;
@@ -98,27 +98,23 @@ a {
   margin: 0;
   padding: 0;
 }
-
 .main-nav__list--user img {
   display: block;
   width: 24px;
   height: 24px;
 }
-
 .main-nav__button {
   padding: 10px 20px;
   background-color: #007bff;
-  color: #fff;
+  color: #ffffff;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   font-size: 16px;
 }
-
 .main-nav__button:hover {
   background-color: #0056b3;
 }
-
 .main-nav__link--active {
   padding: 20px 12px;
   border-bottom: 2px solid #756257;
@@ -154,7 +150,7 @@ a {
   max-width: 100%;
   height: auto;
 }
-.hero img:last-of-type {
+.hero__image:last-of-type {
   position: absolute;
   bottom: 0;
   left: 50%;
@@ -164,7 +160,6 @@ a {
 .advantages {
   text-align: center;
 }
-
 .advantages__item-content {
   padding: 50px 30px;
   background-color: #81b3d2;
@@ -175,22 +170,23 @@ a {
   align-items: center;
   text-align: center;
 }
-
 .advantages__item-title {
+  position: relative;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
   padding: 0 0 10px 0;
   max-width: 175px;
-  word-wrap: break-word;
-  text-decoration: underline;
-  text-decoration-color: #0000004d;
-  text-decoration-thickness: 2px;
-  text-underline-offset: 15px;
-  text-underline-position: under;
 }
-
+.advantages__item-title::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 2px;
+  background-color: #0000004d;
+  margin: 16px auto 0;
+}
 .advantages__item-text {
   max-width: 175px;
   font-size: 18px;
@@ -272,13 +268,12 @@ a {
   grid-template-columns: 1fr 2fr;
 }
 .advantages__item--reverse {
-  /* grid-template-columns: 400px 800px; */
   grid-template-columns: 1fr 2fr;
   direction: rtl;
 }
-.advantages__item--reverse * {
-  /* direction: ltr; */
-}
+/* .advantages__item--reverse * {
+   direction: ltr; 
+} */
 .reservation {
   display: flex;
   flex-direction: column;
@@ -300,6 +295,7 @@ a {
   font-size: 22px;
   line-height: 26px;
   text-align: center;
+  padding-bottom: 54px;
 }
 .reservation__button {
   font-size: 20px;
@@ -307,11 +303,9 @@ a {
   text-transform: uppercase;
   color: #ffffff;
   background-color: #756157;
-
   width: 376px;
   height: 52px;
   box-sizing: border-box;
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -323,13 +317,13 @@ a {
   white-space: nowrap;
 }
 .subscription {
-  height: 414px;
   background-image: url(../img/backgrounds/footer-bg.jpg);
   background-size: 100% auto;
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 96px 0 108px 0;
 }
 .subscription__form {
   display: flex;
