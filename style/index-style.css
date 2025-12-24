@@ -41,6 +41,29 @@ p {
   margin: 0;
   padding: 0;
 }
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+  white-space: nowrap;
+  box-sizing: border-box;
+}
+.button--color-brown {
+  background-color: #756257;
+  color: #ffffff;
+}
+.button--color-blue {
+  background-color: #82b3d3;
+  color: #ffffff;
+}
+.button--color-blue:hover {
+  background-color: #5a95b5;
+}
 /* img {
   max-width: 100%;
   height: auto;
