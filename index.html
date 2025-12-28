@@ -2,14 +2,8 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0"
-    />
-    <link
-      rel="stylesheet"
-      href="style/index-style.css"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/index-style.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap"
       rel="stylesheet"
@@ -23,13 +17,10 @@
         <nav class="main-nav">
           <div class="main-nav__left">
             <!-- логотип -->
-            <a
-              class="main-nav__logo"
-              href="#"
-            >
+            <a class="main-nav__logo" href="#">
               <img
                 class="main-nav__logo-svg"
-                src="/img/logo.svg"
+                src="/sedona/img/logo.svg"
                 alt="Sedona"
               />
             </a>
@@ -37,28 +28,15 @@
             <!-- левое меню -->
             <ul class="main-nav__list main-nav__list--site">
               <li class="main-nav__item">
-                <a
-                  class="main-nav__link main-nav__link--active"
-                  href="#"
-                >
+                <a class="main-nav__link main-nav__link--active" href="#">
                   Главная
                 </a>
               </li>
               <li class="main-nav__item">
-                <a
-                  class="main-nav__link"
-                  href="#"
-                >
-                  О Седоне
-                </a>
+                <a class="main-nav__link" href="#"> О Седоне </a>
               </li>
               <li class="main-nav__item">
-                <a
-                  class="main-nav__link"
-                  href="#"
-                >
-                  Гостиницы
-                </a>
+                <a class="main-nav__link" href="#"> Гостиницы </a>
               </li>
             </ul>
           </div>
@@ -66,33 +44,16 @@
           <!-- правая часть меню -->
           <ul class="main-nav__list main-nav__list--user">
             <li class="main-nav__item">
-              <a
-                class="main-nav__link"
-                href="#"
-              >
+              <a class="main-nav__link" href="#">
                 <span class="visually-hidden">Поиск</span>
-                <img
-                  src="img/search.svg"
-                  alt=""
-                  aria-hidden="true"
-                />
+                <img src="img/search.svg" alt="" aria-hidden="true" />
               </a>
             </li>
             <li class="main-nav__item">
-              <a
-                class="main-nav__link"
-                href="#"
-              >
+              <a class="main-nav__link" href="#">
                 <span class="visually-hidden"> Избранное</span>
-                <img
-                  src="img/heart.svg"
-                  alt=""
-                  aria-hidden="true"
-                />
-                <span
-                  class="main-nav__favorites-count"
-                  aria-hidden="true"
-                >
+                <img src="img/heart.svg" alt="" aria-hidden="true" />
+                <span class="main-nav__favorites-count" aria-hidden="true">
                   12
                 </span>
               </a>
@@ -113,11 +74,7 @@
             alt="Приглашение в Седону"
             aria-hidden="true"
           />
-          <img
-            class="hero__image"
-            src="img/decor.svg"
-            alt=""
-          />
+          <img class="hero__image" src="img/decor.svg" alt="" />
         </section>
         <section class="advantages">
           <div class="advantages__intro">
@@ -133,10 +90,13 @@
 
           <ul class="advantages__list">
             <!-- wide item -->
-            <li class="advantages__item advantages__item--wide">
+            <li class="advantages__item--wide">
               <div class="advantages__item-content">
                 <div class="advantages__item-inner">
-                  <h3 class="advantages__item-title">Настоящий городок</h3>
+                  <h3 class="advantages__item-title">
+                    Настоящий<br />
+                    городок
+                  </h3>
                   <p class="advantages__item-text advantages__item--color">
                     Седона — не аттракцион для туристов, там течёт своя жизнь
                   </p>
@@ -150,42 +110,56 @@
             </li>
 
             <!-- normal items -->
-            <li class="advantages__item">
+            <li class="advantages__item advantages__item--center">
               <div class="advantages__item-inner">
-                <h3 class="advantages__item-title">Небольшая площадь</h3>
+                <h3 class="advantages__item-title">
+                  Небольшая<br />
+                  площадь
+                </h3>
                 <p class="advantages__item-text">
-                  Все достопримечательности находятся очень близко
+                  Все достопримечательности<br />
+                  находятся очень близко
                 </p>
               </div>
             </li>
-            <li class="advantages__item advantages__item--road">
+            <li
+              class="advantages__item advantages__item--center advantages__item--road"
+            >
               <div class="advantages__item-inner">
-                <h3 class="advantages__item-title">Красивая дорога</h3>
+                <h3 class="advantages__item-title">
+                  Красивая <br />
+                  дорога
+                </h3>
                 <p class="advantages__item-text">
-                  Ехать в&nbsp;Седону из&nbsp;Лас-Вегаса совсем не&nbsp;скучно!
+                  Ехать в&nbsp;Седону из&nbsp;Лас-Вегаса<br />
+                  совсем не&nbsp;скучно!
                 </p>
               </div>
             </li>
 
-            <li class="advantages__item">
+            <li class="advantages__item advantages__item--center">
               <div class="advantages__item-inner">
-                <h3 class="advantages__item-title">Мало туристов</h3>
+                <h3 class="advantages__item-title">
+                  Мало<br />
+                  туристов
+                </h3>
                 <p class="advantages__item-text">
-                  Большинство едет в&nbsp;Гранд-Каньон и&nbsp;толпится там
+                  Большинство едет в&nbsp;Гранд<br />
+                  Каньон и&nbsp;толпится там
                 </p>
               </div>
             </li>
 
             <!-- wide reverse item -->
             <li
-              class="advantages__item advantages__item--wide advantages__item--reverse advantages__item--last"
+              class="advantages__item--wide advantages__item--reverse advantages__item--last"
             >
               <div class="advantages__item-content">
                 <div class="advantages__item-inner">
                   <h3 class="advantages__item-title">Там есть мост дьявола</h3>
                   <p class="advantages__item-text advantages__item--color">
-                    Да, по&nbsp;нему можно пройти! Если вы осмелитесь,
-                    разумеется
+                    Да, по&nbsp;нему можно пройти!<br />
+                    Если вы осмелитесь, разумеется
                   </p>
                 </div>
               </div>
@@ -196,6 +170,7 @@
               />
             </li>
           </ul>
+
           <div class="advantages__wrapper-text">
             <h2 class="advantages__title">
               Приезжайте в&nbsp;Седону отдохнуть в&nbsp;комфорте и&nbsp;уюте!
@@ -204,14 +179,18 @@
               Опытный персонал и&nbsp;качественное обслуживание!
             </p>
           </div>
+
           <!-- services -->
           <ul class="advantages__list advantages__list--services">
-            <li class="advantages__item advantages__item--background">
+            <li
+              class="advantages__item advantages__item--background advantages__item--center"
+            >
               <div class="advantages__item-inner">
                 <h3 class="advantages__item-title">Жильё</h3>
                 <p class="advantages__item-text">
-                  Рекомендуем пожить в&nbsp;настоящем мотеле, всё как
-                  в&nbsp;кино!
+                  Рекомендуем пожить<br />
+                  в&nbsp;настоящем мотеле,<br />
+                  всё как в&nbsp;кино!
                 </p>
                 <img
                   class="advantages__item-image"
@@ -223,11 +202,14 @@
               </div>
             </li>
 
-            <li class="advantages__item advantages__item--food">
+            <li
+              class="advantages__item advantages__item--food advantages__item--center"
+            >
               <div class="advantages__item-inner">
                 <h3 class="advantages__item-title">Еда</h3>
                 <p class="advantages__item-text">
-                  Всегда заказывайте топовый фирменный бургер,
+                  Всегда заказывайте<br />
+                  топовый фирменный бургер,<br />
                   вы&nbsp;не&nbsp;разочаруетесь!
                 </p>
                 <img
@@ -240,11 +222,12 @@
               </div>
             </li>
 
-            <li class="advantages__item">
+            <li class="advantages__item advantages__item--center">
               <div class="advantages__item-inner">
                 <h3 class="advantages__item-title">Сувениры</h3>
                 <p class="advantages__item-text">
-                  Не&nbsp;только китайского, но&nbsp;и&nbsp;настоящего местного
+                  Не&nbsp;только китайского,<br />
+                  но&nbsp;и&nbsp;настоящего местного<br />
                   производства!
                 </p>
                 <img
@@ -283,12 +266,9 @@
               бойскаутское!
             </p>
           </div>
-          <form
-            class="subscription__form"
-            action="#"
-          >
+          <form class="subscription__form" action="#">
             <label
-              class="subscription__label"
+              class="subscription__label visually-hidden"
               for="subscription-email"
               >Ваш e-mail</label
             >
@@ -313,34 +293,31 @@
         <div class="footer-socials">
           <ul class="footer-socials-list">
             <li class="footer-socials-item">
-              <a
-                href="#"
-                class="footer-socials-link"
-              >
+              <a href="#" class="footer-socials-link">
                 <img
                   src="img/social-vk.svg"
+                  width="22px"
+                  height="17px"
                   alt="vk"
                 />
               </a>
             </li>
             <li class="footer-socials-item">
-              <a
-                href="#"
-                class="footer-socials-link"
-              >
+              <a href="#" class="footer-socials-link">
                 <img
                   src="img/social-tg.svg"
+                  width="22px"
+                  height="17px"
                   alt="telegram"
                 />
               </a>
             </li>
             <li class="footer-socials-item">
-              <a
-                href="#"
-                class="footer-socials-link"
-              >
+              <a href="#" class="footer-socials-link">
                 <img
                   src="img/social-youtube.svg"
+                  width="22px"
+                  height="17px"
                   alt="youtube"
                 />
               </a>
@@ -352,10 +329,7 @@
         </div>
         <div class="footer-logo">
           <a href="#">
-            <img
-              src="img/logo-footer.svg"
-              alt="логотип Html-academy"
-            />
+            <img src="img/logo-footer.svg" alt="логотип Html-academy" />
           </a>
         </div>
       </footer>
