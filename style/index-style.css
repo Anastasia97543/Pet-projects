@@ -263,13 +263,14 @@ a {
   grid-column: 1 / -1;
   display: grid;
   grid-template-columns: 1fr 2fr;
+  direction: rtl;
 }
 .advantages__item--wide:last-child {
   padding-bottom: 64px;
 }
 .advantages__item--reverse {
   grid-template-columns: 1fr 2fr;
-  direction: rtl;
+  direction: ltr;
 }
 .advantages__item-content {
   padding-top: 100px;
@@ -470,6 +471,7 @@ a {
 }
 .subscription__button:hover {
   background-color: #5a95b5;
+  transition: opacity 0.3s ease, transform 0.3s ease;
 }
 .page-footer {
   display: flex;
