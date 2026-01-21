@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -20,13 +20,13 @@
             <a class="main-nav__logo" href="#">
               <img
                 class="main-nav__logo-svg"
-                src="/sedona/img/logo.svg"
+                src="/img/logo.svg"
                 alt="Sedona"
               />
             </a>
 
             <!-- левое меню -->
-            <ul class="main-nav__list main-nav__list--site">
+            <ul class="main-nav__list main-nav__list--site list">
               <li class="main-nav__item">
                 <a class="main-nav__link main-nav__link--active" href="#">
                   Главная
@@ -36,13 +36,13 @@
                 <a class="main-nav__link" href="#"> О Седоне </a>
               </li>
               <li class="main-nav__item">
-                <a class="main-nav__link" href="#"> Гостиницы </a>
+                <a class="main-nav__link" href="/catalog.html"> Гостиницы </a>
               </li>
             </ul>
           </div>
 
           <!-- правая часть меню -->
-          <ul class="main-nav__list main-nav__list--user">
+          <ul class="main-nav__list main-nav__list--user list">
             <li class="main-nav__item">
               <a class="main-nav__link" href="#">
                 <span class="visually-hidden">Поиск</span>
@@ -82,23 +82,25 @@
               Седона&nbsp;&mdash; небольшой городок в&nbsp;Аризоне,
               заслуживающий большего!
             </h2>
-            <p class="advantages__description">
+            <p class="advantages__text">
               Рассмотрим причины, по&nbsp;которым Седона круче, чем
               Гранд-Каньон!
             </p>
           </div>
 
-          <ul class="advantages__list">
+          <ul class="advantages__list list">
             <!-- wide item -->
             <li class="advantages__item--wide">
               <div class="advantages__item-content">
                 <div class="advantages__item-inner">
-                  <h3 class="advantages__item-title">
+                  <h3 class="advantages__item-title advantages__item--B">
                     Настоящий<br />
                     городок
                   </h3>
                   <p class="advantages__item-text advantages__item--color">
-                    Седона — не аттракцион для туристов, там течёт своя жизнь
+                    Седона — не аттракцион для <br />
+                    туристов, там течёт своя <br />
+                    жизнь
                   </p>
                 </div>
               </div>
@@ -156,10 +158,13 @@
             >
               <div class="advantages__item-content">
                 <div class="advantages__item-inner">
-                  <h3 class="advantages__item-title">Там есть мост дьявола</h3>
+                  <h3 class="advantages__item-title advantages__item--B">
+                    Там есть мост дьявола
+                  </h3>
                   <p class="advantages__item-text advantages__item--color">
                     Да, по&nbsp;нему можно пройти!<br />
-                    Если вы осмелитесь, разумеется
+                    Если вы осмелитесь, <br />
+                    разумеется
                   </p>
                 </div>
               </div>
@@ -181,19 +186,21 @@
           </div>
 
           <!-- services -->
-          <ul class="advantages__list advantages__list--services">
+          <ul class="advantages__list advantages__list--services list">
             <li
               class="advantages__item advantages__item--background advantages__item--center"
             >
               <div class="advantages__item-inner">
-                <h3 class="advantages__item-title">Жильё</h3>
+                <h3 class="advantages__item-title advantages__item-none">
+                  Жильё
+                </h3>
                 <p class="advantages__item-text">
                   Рекомендуем пожить<br />
                   в&nbsp;настоящем мотеле,<br />
                   всё как в&nbsp;кино!
                 </p>
                 <img
-                  class="advantages__item-image"
+                  class="advantages__item-image advantages__item--style"
                   src="img/home.svg"
                   width="72"
                   height="75"
@@ -206,14 +213,16 @@
               class="advantages__item advantages__item--food advantages__item--center"
             >
               <div class="advantages__item-inner">
-                <h3 class="advantages__item-title">Еда</h3>
+                <h3 class="advantages__item-title advantages__item-none">
+                  Еда
+                </h3>
                 <p class="advantages__item-text">
                   Всегда заказывайте<br />
                   топовый фирменный бургер,<br />
                   вы&nbsp;не&nbsp;разочаруетесь!
                 </p>
                 <img
-                  class="advantages__item-image"
+                  class="advantages__item-image advantages__item--style"
                   src="img/food.svg"
                   width="72"
                   height="75"
@@ -224,14 +233,16 @@
 
             <li class="advantages__item advantages__item--center">
               <div class="advantages__item-inner">
-                <h3 class="advantages__item-title">Сувениры</h3>
+                <h3 class="advantages__item-title advantages__item-none">
+                  Сувениры
+                </h3>
                 <p class="advantages__item-text">
                   Не&nbsp;только китайского,<br />
                   но&nbsp;и&nbsp;настоящего местного<br />
                   производства!
                 </p>
                 <img
-                  class="advantages__item-image"
+                  class="advantages__item-image advantages__item--style"
                   src="img/souvenir.svg"
                   width="72"
                   height="75"
@@ -262,36 +273,36 @@
           <div class="subscription__wrapper-text">
             <h3 class="subscription__title">Подпишитесь на рассылку</h3>
             <p class="subscription__text">
-              Только полезная информация и&nbsp;никакого спама, честное
+              Только полезная информация и&nbsp;никакого спама,<br />честное
               бойскаутское!
             </p>
+            <form class="subscription__form" action="#">
+              <label
+                class="subscription__label visually-hidden"
+                for="subscription-email"
+                >Ваш e-mail</label
+              >
+              <input
+                class="subscription__input"
+                type="email"
+                id="subscription-email"
+                placeholder="Ваш e-mail"
+                required
+              />
+              <button
+                class="subscription__button button button--color-blue"
+                type="submit"
+              >
+                Подписаться
+              </button>
+            </form>
           </div>
-          <form class="subscription__form" action="#">
-            <label
-              class="subscription__label visually-hidden"
-              for="subscription-email"
-              >Ваш e-mail</label
-            >
-            <input
-              class="subscription__input"
-              type="email"
-              id="subscription-email"
-              placeholder="Ваш e-mail"
-              required
-            />
-            <button
-              class="subscription__button button button--color-blue"
-              type="submit"
-            >
-              Подписаться
-            </button>
-          </form>
         </section>
       </main>
 
       <footer class="page-footer">
         <div class="footer-socials">
-          <ul class="footer-socials-list">
+          <ul class="footer-socials-list list">
             <li class="footer-socials-item">
               <a href="#" class="footer-socials-link">
                 <img

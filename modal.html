@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../style/modal-style.css" />
+  </head>
+  <body>
+    <div class="modal modal--open" role="dialog" aria-modal="true">
+      <div class="modal__overlay"></div>
+
+      <div class="modal__content">
+        <button class="modal__close" type="button" aria-label="Закрыть">
+          x
+        </button>
+
+        <h2 class="modal__title">Поиск гостиницы в Седоне</h2>
+
+        <form class="search-form" action="#" method="get">
+          <div class="search-form__row">
+            <label class="search-form__label" for="date-in">
+              Дата заезда:
+            </label>
+
+            <div class="search-form__field">
+              <input
+                class="search-form__input"
+                type="text"
+                id="date-in"
+                value="27 апреля 2020"
+              />
+              <span class="search-form__icon"></span>
+            </div>
+
+            <p class="search-form__message search-form__message--error">
+              Мы не можем отправить вас в прошлое.
+            </p>
+          </div>
+          <div class="search-form__row">
+            <label class="search-form__label" for="date-out">
+              Дата выезда:
+            </label>
+
+            <div class="search-form__field">
+              <input
+                class="search-form__input"
+                type="text"
+                id="date-out"
+                value="1 сентября 2023"
+              />
+              <span class="search-form__icon"></span>
+            </div>
+
+            <p class="search-form__message">
+              На эти даты есть свободные номера. Пока есть.
+            </p>
+          </div>
+          <div class="search-form__row search-form__row--guests">
+            <div class="search-form__counter">
+              <span class="search-form__label">Взрослые:</span>
+
+              <div class="counter">
+                <button class="counter__button" type="button">−</button>
+                <span class="counter__value">2</span>
+                <button class="counter__button" type="button">+</button>
+              </div>
+            </div>
+
+            <div class="search-form__counter">
+              <span class="search-form__label">
+                Дети:
+                <span class="search-form__info">i</span>
+              </span>
+
+              <div class="counter">
+                <button class="counter__button" type="button">−</button>
+                <span class="counter__value">2</span>
+                <button class="counter__button" type="button">+</button>
+              </div>
+
+              <div class="tooltip">
+                Укажите количество детей, которые будут с вами, возраст которых
+                от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
+              </div>
+            </div>
+          </div>
+          <button
+            class="button button--primary search-form__submit"
+            type="submit"
+          >
+            Найти
+          </button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
